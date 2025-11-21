@@ -70,9 +70,9 @@ def generate_palette():
     amp_b, freq_b, phase_b = random.uniform(30, 80), random.uniform(0.02, 0.3), random.uniform(0, math.pi * 2)
 
     # Add a second sine wave for each channel for more complexity
-    # amp_r2, freq_r2, phase_r2 = random.uniform(10, 40), random.uniform(0.05, 0.5), random.uniform(0, math.pi * 2)
-    # amp_g2, freq_g2, phase_g2 = random.uniform(10, 40), random.uniform(0.05, 0.5), random.uniform(0, math.pi * 2)
-    # amp_b2, freq_b2, phase_b2 = random.uniform(10, 40), random.uniform(0.05, 0.5), random.uniform(0, math.pi * 2)
+    amp_r2, freq_r2, phase_r2 = random.uniform(10, 40), random.uniform(0.05, 0.5), random.uniform(0, math.pi * 2)
+    amp_g2, freq_g2, phase_g2 = random.uniform(10, 40), random.uniform(0.05, 0.5), random.uniform(0, math.pi * 2)
+    amp_b2, freq_b2, phase_b2 = random.uniform(10, 40), random.uniform(0.05, 0.5), random.uniform(0, math.pi * 2)
 
     for i, (r, g, b) in enumerate(base_palette):
         # Apply two sine waves for each channel
